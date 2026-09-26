@@ -7,6 +7,9 @@ import Preloader from "@/components/Preloader";
 export const metadata: Metadata = {
   title: "খড়কুটো পল্লী | Curated Showpieces. Timeless Spaces.",
   description: "Premium showpiece and home decor shop based in Mirpur, Dhaka. Discover elegant figurines, wall art, vases, and more.",
+};
+
+export const viewport = {
   themeColor: "#F6F4EE",
 };
 
