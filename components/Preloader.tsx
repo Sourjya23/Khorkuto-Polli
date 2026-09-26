@@ -37,15 +37,11 @@ export default function Preloader() {
       <div 
         className={`absolute z-20 flex flex-col items-center justify-center transition-all duration-[800ms] ease-[cubic-bezier(0.77,0,0.175,1)] ${
           stage >= 2 
-            ? 'top-[2.5rem] left-[4rem] md:left-[5rem] lg:left-[3rem] xl:left-[4rem] -translate-y-1/2 translate-x-0' 
-            : 'top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2'
-        }`}
+            ? 'top-[2.5rem] left-[4rem] md:left-[5rem] lg:left-[3rem] xl:left-[4rem] -translate-y-1/2 translate-x-0 scale-100 opacity-100' 
+            : 'top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 scale-125 sm:scale-150 md:scale-[2] opacity-100'
+        } ${stage === 0 ? 'animate-pulseSoft' : ''}`}
       >
-        <h1 className={`font-serif text-ink tracking-tight font-medium whitespace-nowrap transition-all duration-[800ms] ease-[cubic-bezier(0.77,0,0.175,1)] ${
-          stage >= 2 
-            ? 'text-3xl md:text-4xl' 
-            : 'text-4xl sm:text-5xl md:text-7xl lg:text-8xl animate-pulseSoft'
-        }`}>
+        <h1 className="font-serif text-3xl md:text-4xl text-ink tracking-tight font-medium whitespace-nowrap">
           খড়কুটো পল্লী<span className="text-terracotta">.</span>
         </h1>
       </div>
